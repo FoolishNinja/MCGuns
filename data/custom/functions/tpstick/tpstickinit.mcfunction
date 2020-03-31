@@ -1,0 +1,1 @@
+give @a carrot_on_a_stick{display:{Name:'"TP Stick"'}, id:"tp_stick"}
