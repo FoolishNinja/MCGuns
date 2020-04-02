@@ -1,0 +1,27 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "copy_nbt",
+                            "source": "this",
+                            "ops": [
+                                {
+                                    "source": "Item.tag",
+                                    "target": "{}",
+                                    "op": "merge"
+                                }
+                            ]
+                        }
+                    ],
+                    "name": "carrot_on_a_stick"
+                }
+            ]
+        }
+    ]
+}

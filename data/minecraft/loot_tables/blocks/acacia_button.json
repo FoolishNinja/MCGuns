@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:entity",
+    
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "conditions":[
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "predicate": {
+                                "nbt": "{Item:{tag:{\"shootable:1b\"}}}"
+                            },
+                            "entity": "this"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:copy_nbt",
+                            "source": "this",
+                            "ops": [
+                                    {
+                                    "source": "Item.tag",
+                                    "target": "{}",
+                                    "op": "merge"
+                                }
+                                
+                            ]
+                        }
+                    ],
+                    "name": "minecraft:carrot_on_a_stick"
+                }
+            ]
+        }
+    ]
+}
