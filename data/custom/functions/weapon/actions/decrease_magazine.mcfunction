@@ -1,5 +1,6 @@
 execute store result score @s temp run data get entity @s SelectedItem.tag.magazine
 scoreboard players remove @s temp 1
+execute store result score @s bullet_cooldown run data get entity @s SelectedItem.tag.bulletDelay
 summon item ~ ~2 ~ {Item:{id:"minecraft:carrot_on_a_stick",Count:1b}}
 data modify entity @e[type=item,sort=nearest,limit=1] Item.tag merge from entity @s SelectedItem.tag
 data modify entity @e[type=item,sort=nearest,limit=1] item.tag.magazine

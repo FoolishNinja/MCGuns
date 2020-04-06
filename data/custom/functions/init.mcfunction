@@ -1,5 +1,5 @@
 say Custom Datapack loaded
-function custom:tpstick/tpstickinit
+# function custom:tpstick/tpstickinit
 function custom:grenade/grenadeinit
 function custom:weapon/init
 scoreboard objectives add ten dummy

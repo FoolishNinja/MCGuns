@@ -1,0 +1,2 @@
+execute as @a[sort=nearest, scores={reload_cooldown=0..}] run execute as @e[nbt={Item:{tag:{shootable:1b}}},limit=1] at @s run function custom:weapon/actions/reload
+execute as @e[nbt={Item:{tag:{shootable:1b}}}] at @s run execute as @p[sort=nearest,limit=1] run execute store result score @s reload_cooldown run data get entity @e[nbt={Item:{tag:{shootable:1b}}},limit=1] Item.tag.reloadDelay
